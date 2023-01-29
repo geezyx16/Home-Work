@@ -13,6 +13,8 @@ console.log(`${size}, ${crust}, ${amount}`);
 
 getPizzaOrder("large", "thick", "cheese and pepperoni");
 
+
+
 // function preparePizza({size, crust, ["pepperoni", "cheese", "chicken"]}) {
 //   console.log
 // }
