@@ -1,6 +1,6 @@
 ### Definition Statement
 
-I want my applications to be produce up-to-date global economic new and also have an interactive interface for users to take learn and  be engaged with short quizzes to solidify the concepts or topics they learn about.
+I want my applications to produce up-to-date global economic new and also have an interactive interface for users to learn and  be engaged with short quizzes to solidify the concepts or topics they learn about.
 
 ### Audience :
 People seeking financial education and skill set to navigate the financial markets.
