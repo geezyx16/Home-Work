@@ -1,22 +1,55 @@
-const myToppings = ["pepperoni", "chicken", "mushroom", "cheese"];
+const { get } = require("https");
 
-const customer = function greetCustomer() {
-  console.log(`Welcome to Pizza House!Our toppings are ${myToppings}.`)
+let toppings = ["pepperoni", "chicken", "mushroom", "cheese"];
+
+function greetCustomer() {
+  console.log("Welcome to Pizza House, our toppings are: ");
+  let toppingsGreeting = "";
+  for (let topping of toppings) {
+    toppingsGreeting += topping + ",";
+  }
+  console.log(toppingsGreeting);
 }
 
-customer();
+greetCustomer();
 
-function getPizzaOrder(size, crust, ...amount) {
-console.log(`One ${size} ${crust} pizza with ${amount} coming up!`);
-console.log(`${size}, ${crust}, ${amount}`);
+
+function getPizzaOrder(size, crust, ...amountOfToppings) {
+  console.log(`One ${size} ${crust} pizza with ${amountOfToppings} coming up!.`);
+  return [size, crust, amountOfToppings];
+
 }
 
-getPizzaOrder("large", "thick", "cheese and pepperoni");
+// let order = getPizzaOrder("large", "stuffed crust", "pepperoni and cheese");
+
+// console.log(order);
 
 
+function preparePizza (order) {
+  console.log("...Cooking pizza...");
+  let pizza = {
+    size: order[0],
+    crust: order[1],
+    toppings: order.slice(2)
+  }
+  return pizza;
+}
 
-// function preparePizza({size, crust, ["pepperoni", "cheese", "chicken"]}) {
-//   console.log
-// }
+// let myPizza = preparePizza(order);
+
+// console.log(myPizza);
+
+
+function servePizza(pizza) {
+  console.log(`Order up! Here's your ${pizza.size} ${pizza.crust} pizza with ${pizza.toppings}. Enjoy!`);
+  // return pizza;
+}
+
+let order = getPizzaOrder("large", "stuffed crust", "pepperoni and cheese");
+let myPizza = preparePizza(order);
+let servedPizza = servePizza(myPizza);
+// console.log(servedPizza);
+
+
 
 
