@@ -20,12 +20,12 @@ function getPizzaOrder(size, crust, ...amountOfToppings) {
 
 }
 
-// let order = getPizzaOrder("large", "stuffed crust", "pepperoni and cheese");
+let order = getPizzaOrder("large", "stuffed crust", "pepperoni and cheese");
 
 // console.log(order);
 
 
-function preparePizza (order) {
+function preparePizza () {
   console.log("...Cooking pizza...");
   let pizza = {
     size: order[0],
@@ -45,10 +45,10 @@ function servePizza(pizza) {
   // return pizza;
 }
 
-let order = getPizzaOrder("large", "stuffed crust", "pepperoni and cheese");
+// let order = getPizzaOrder("large", "stuffed crust", "pepperoni and cheese");
 let myPizza = preparePizza(order);
-let servedPizza = servePizza(myPizza);
-// console.log(servedPizza);
+servePizza(myPizza);
+
 
 
 
