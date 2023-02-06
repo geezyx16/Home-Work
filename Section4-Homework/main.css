@@ -1,0 +1,44 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    background-image: url(https://unsplash.com/photos/ZGGVTQxod0s);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  1px solid white;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+main, footer {
+    padding: 0 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about {
+    font-size: 1.5rem;
+}
+
+#bye_bye {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+footer > img {
+    height: 40vh;
+}
