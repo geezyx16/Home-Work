@@ -1,3 +1,4 @@
+data = 
 [
   {
     "id": 1,
@@ -230,3 +231,16 @@
     }
   }
 ]
+
+// create and print a list of phone numbers
+const phoneNumbers = data.map(phoneNumber => phoneNumber.phone);
+
+console.log(phoneNumbers);
+
+//create and print a list of website and email pairs (pair them in a string, array, or object)
+
+const newList = data.map(list => {
+  return `${list.website}, ${list.email}`;
+})
+
+console.log(newList);
