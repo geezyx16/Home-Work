@@ -1,3 +1,4 @@
+const data = 
 [
     {
       "userId": 1,
@@ -600,3 +601,17 @@
       "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
     }
   ]
+
+// create a list of user 5's posts
+
+let userFive = data.filter(five => five.userId === 5)
+
+console.log(userFive);
+
+// create a list of title and body pairs  
+
+const userData = data.map(any => {
+  return `${any.title} ${any.body}`
+});
+
+console.log(userData);
